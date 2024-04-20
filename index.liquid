@@ -1,0 +1,45 @@
+---
+layout: layout.liquid
+title: Palina's Intergalactic Laboratory
+---
+<div id="logo-header">
+    <img src="images/logo.png" alt=Logo of Palina's Intergalactic Labrotary" loading="lazy">
+    <div id="text-items">
+        <h1>Palina's Intergalactic Laboratory</h1>
+        <p id="current-date">Last updated: <span id="lastUpdated"></span></p>
+    </div>
+</div>
+
+<main>
+    <div class="module one">
+        
+        <div class="planet moon">
+            <h2>Experiment Moon Landing</h2>
+            <div class="planet-circle"></div>
+            <img src="images/moon.png" alt="">
+            <p>Status: Complete</p>
+        </div>
+        
+    </div>
+    <div class="module two">
+        <div class="planet mars">
+            <h2>Experiment Mars Landing</h2>
+            <div class="planet-circle"></div>
+            <img src="images/mars.png" alt="">
+            <p>Status: In Progress</p>
+        </div>
+    </div>
+    <div class="module three">
+        <div class="planet saturn">
+            <h2>Experiment Saturn Landing</h2>
+            <div class="planet-circle"></div>
+            <img src="images/saturn.png" alt="">
+            <p>Status: In Progress</p>
+        </div>
+    </div>
+</main>
+<script>
+    var currentDate = new Date();
+    var formattedDate = currentDate.toLocaleString();
+    document.getElementById("lastUpdated").innerText = formattedDate;
+</script>

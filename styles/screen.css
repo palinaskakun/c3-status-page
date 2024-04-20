@@ -1,0 +1,84 @@
+:root {
+    --main-color: rgb(19,21,70);
+    --card-color: rgb(165,197,250);
+    --main-font: Helvetica, sans-serif;
+    --color-white: #ffffff;
+    --moon-gray: rgb(98, 98, 98);
+    --sun-orange: rgb(223, 150, 4);
+    --mercury-gray: rgb(197, 171, 132);
+    --mercury-brown: rgb(107, 76, 29);
+    --mars-red: rgb(175, 35, 0);
+    --mars-orange: rgb(255, 179, 64);
+    --earth-blue: rgb(16, 87, 187);
+    --earth-green: rgb(0, 200, 0);
+    --uranus-teal: rgb(155, 255, 232);
+    --neptune-light-blue: rgb(139, 187, 255);
+    --jupiter-gray: rgb(121, 99, 66);
+    --biggest-planet-w-h: 110px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--main-color);
+    padding: 20px;
+}
+
+#logo-header {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+#current-date {
+    color: white;
+}
+
+h1 {
+    color: var(--color-white);
+    font-size: 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 60vh;
+    gap: 2vw;
+    color: var(--main-color);
+}
+
+#text-items{
+    padding: 20px;
+}
+
+.module {
+    background: var(--card-color);
+    border-radius: 5%;
+}
+
+.module:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.planet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.planet-circle {
+    border-radius: 50%;
+    margin-bottom: 1.25vw;
+}
+
+.planet h2 {
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+.planet p {
+    margin: 5px 0;
+}
